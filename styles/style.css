@@ -24,12 +24,20 @@ body{
 
 .header{
     padding: 2% 5% 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
 }
 
 .header__menu{
-    display: flex;
     gap: 5%;
-    justify-content: flex-end;
+    display: flex;
+    width: 30%;
 }
 
 .header__menu__link{
@@ -166,20 +174,35 @@ body{
 
 @media (max-width: 1200px){
     .header{
-        padding: 10%;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .header__menu{
         justify-content: center;
+        width: 100%;
+        padding-top: 2%;
     }
 
     .presentacion{
         flex-direction: column-reverse;
         padding: 5%;
+        margin-top: 0%;
+        padding-top: 0%;
     }
 
     .presentacion__contenido{
         width: auto;
+    }
+
+    .presentacion__contenido__titulo{
+        text-align: center;
+    }
+
+    .presentacion__contenido__parrafo{
+        text-align: center;
     }
 
     .proyectos{
